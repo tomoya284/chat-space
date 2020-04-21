@@ -1,0 +1,25 @@
+.side-bar
+ .side-bar__header
+  .side-bar__header__top-items
+   .side-bar__header__top-items__left
+    fujii
+   %ul.side-bar__header__top-items__right
+    %li.side-bar__header__top-items__right__edit-user
+     = link_to "#" do
+      = icon('fas', 'edit')
+    %li.side-bar__header__top-items__right__new-group
+     = link_to "#" do
+      = icon('fas', 'cog')
+ .side-bar__groups
+  = link_to "#", class:"group" do
+   %p.group__group-name
+    test
+   %p.group__latest-message
+    まだメッセージがありません
+   %p.group__group-name
+    test
+   %p.group__latest-message
+    まだメッセージがありません
+    
+   
+

@@ -1,0 +1,37 @@
+.main-chat
+ .main-chat__header
+  .main-chat__header__left
+  
+   %p.main-chat__header__left__name
+    test
+   %p.main-chat__header__left__member
+    Member : aaaa   
+  .main-chat__header__right
+   = link_to "#", class: "text-line" do
+    %p.main-chat__header__right__btnfont
+     Edit
+ .main-chat__messages
+  .main-chat__messages__day
+   .main-chat__messages__nich
+    tomoya
+   .main-chat__messages__date
+    2020/4/21(TUE) 12.28.59
+  %p.main-chat__messages__comment
+   こんにちは
+  .main-chat__messages__day
+   .main-chat__messages__nich
+    tomoya
+   .main-chat__messages__date
+    2020/4/21(TUE) 12.28.59
+  %p.main-chat__messages__comment
+   こんにちは
+ .main-chat__footer
+  %form{class: "main-chat__footer__up"}
+   .main-chat__footer__up__1
+    %input{type: "text", class: "main-chat__footer__up__1__jr1", placeholder: "type a message"}
+    .main-chat__footer__up__jr2
+     %label{class: "main-chat__footer__up__1__image" }
+      = icon('fas', 'image')
+      %input{type:"file", class: "main-chat__footer__up__1__image__file"}
+   .main-chat__footer__up__2 
+    Send 
