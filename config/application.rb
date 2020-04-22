@@ -17,3 +17,4 @@ module ChatSpace
     config.i18n.default_locale = :ja
   end
 end
+
