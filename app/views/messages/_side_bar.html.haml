@@ -1,15 +1,16 @@
 .side-bar
  .side-bar__header
   .side-bar__header__top-items
+   = current_user.name
    .side-bar__header__top-items__left
-    fujii
+  
    %ul.side-bar__header__top-items__right
     %li.side-bar__header__top-items__right__edit-user
      = link_to "#" do
-      = icon('fas', 'edit')
+      = icon('fas', 'edit', class: 'icon')
     %li.side-bar__header__top-items__right__new-group
-     = link_to "#" do
-      = icon('fas', 'cog')
+     = link_to edit_user_path(current_user) do
+      = icon('fas', 'cog', class: 'icon')
  .side-bar__groups
   = link_to "#", class:"group" do
    %p.group__group-name
@@ -20,6 +21,8 @@
     test
    %p.group__latest-message
     まだメッセージがありません
+
+
     
    
 
