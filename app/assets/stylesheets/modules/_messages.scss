@@ -62,6 +62,7 @@
    &__messages {
     height: calc(100vh - 190px);
    background-color: #fafafa;
+   overflow: scroll;
    &__day {
      background-color: #fafafa;
      display: flex;
