@@ -41,6 +41,8 @@ group :development, :test do
 end
 
 group :development do
+  gem 'rspec'
+    
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
@@ -56,6 +58,17 @@ gem 'pry-rails'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'carrierwave'
+gem 'mini_magick'
+
+group :test do 
+     gem 'rspec'
+end
+
+group :production do 
+     gem 'unicorn'
+end
 
 gem 'haml-rails'
 
