@@ -3,7 +3,7 @@
   .main-chat__header__left
    %p.main-chat__header__left__name
     = @group.name
-   %p.main-chat__header__left__member
+   %div.main-chat__header__left__member
     Member：
     - @group.users.each do |user|
      = user.name
