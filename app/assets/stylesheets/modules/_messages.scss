@@ -21,8 +21,8 @@
 
     
     &__left {
-      width: 152px;
       background-color: #ffffff;
+      
       
       &__name {
         margin-top: 35px;
@@ -37,6 +37,7 @@
         color: #999999;
         margin-left: 40px;
         margin-top: 15px;
+        display: flex;
 
       }
 
