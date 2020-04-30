@@ -12,12 +12,15 @@
   width: calc(100vw - 300px);
   margin-left: auto;
   
+  
   &__header {
     height: 100px;
     background-color: #ffffff;
     border-bottom: solid #eeeeee;
     display: flex;
     justify-content: space-between;
+    
+    
 
     
     &__left {
@@ -64,6 +67,7 @@
     height: calc(100vh - 190px);
    background-color: #fafafa;
    overflow: scroll;
+   padding-top: 35px;
    &__day {
      background-color: #fafafa;
      display: flex;
@@ -91,6 +95,7 @@
     .message {
 
       padding-bottom: 40px;
+      
 
       .lower-message__content {
         columns: #434a54;
